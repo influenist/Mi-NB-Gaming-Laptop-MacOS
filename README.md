@@ -8,7 +8,7 @@ The project goal is to develop and maintain MacOS support for all Xiaomi Noteboo
 To be added
 
 ## Current release
-v0.1-beta.1 - View the relase page
+[v0.1-beta.1 - View the release page](https://github.com/influenist/Mi-NB-Gaming-Laptop-MacOS/releases)
 
 ## Credits
 - Rehabman
