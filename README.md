@@ -1,4 +1,4 @@
-# Hackintosh Effort for Xiaomi Mi Notebook & Gaming laptops
+# MacOS Effort for Xiaomi Mi Notebook & Gaming laptops
 The project goal is to develop and maintain MacOS support for all Xiaomi Notebook (Air / Pro) & Gaming Laptops.
 
 # Releases
