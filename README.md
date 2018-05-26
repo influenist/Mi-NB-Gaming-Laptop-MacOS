@@ -36,3 +36,4 @@ Known issues:
 - Pike R. Alpha
 - toleda, Mirone
 - Alexandred 
+- Daliansky
