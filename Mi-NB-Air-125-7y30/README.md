@@ -20,6 +20,20 @@ To create a MacOS usb installer you will first need either a. Access to a Mac or
 1. __Copy & Paste__ the unzipped __EFI__ folder to __mounted partition__ or __/Volumes/EFI__
 
 ## Step 4 - BIOS Settings
-Restart your computer and spam the FN + F2 keys to enter BIOS as the computer boots.
+Plug-in your USB macOS installer, restart your Mi NoteBook and spam the FN + F2 keys to enter BIOS as the NoteBook boots.
 
-... to be added
+Once the bios apears, please adjust the following values
+- Security > Set Supervisor Password (REMEMBER THIS!)
+- Security > Secure boot > Disable
+- Boot > Boot Mode > UEFI
+- Boot > Boot Device Order > Select your USB installer (use +/- to change the order and get your USB installer on top)
+
+You are now setup, hit F10 to save your adjustments and boot up the macOS installer.
+
+## Step 5 - Installing macOS
+
+[Mac OS High Sierra Hackintosh Install Clover Walkthrough](http://hackintosher.com/guides/macos-high-sierra-hackintosh-install-clover-walkthrough) (Hackintosher)
+
+## Post install notes
+After you have succesfully run through these steps and booted your Hackintosh, you will notice your device has no internal WIFI. This is due to the unsuported INTEL WIFI Bluetooth chip in the NoteBoot Air. In this case either use RNDIS (usb tether your wifi fomr Andriod), use an USB wifi key such as EDIMAX or use your internal M.2 Key PCI port for the adapter mentioned [here](https://www.hackintosh-forum.de/index.php/Thread/36796-M-2-key-M-to-M-2-key-A-E-for-WIFI-BT-adapter/)  
+
