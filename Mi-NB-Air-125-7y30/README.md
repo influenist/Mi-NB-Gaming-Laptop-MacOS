@@ -37,3 +37,4 @@ You are now setup, hit F10 to save your adjustments and boot up the macOS instal
 ## Post install notes
 After you have succesfully run through these steps and booted your Hackintosh, you will notice your device has no internal WIFI. This is due to the unsuported INTEL WIFI Bluetooth chip in the NoteBoot Air. In this case either use RNDIS (usb tether your wifi fomr Andriod), use an USB wifi key such as EDIMAX or use your internal M.2 Key PCI port for the adapter mentioned [here](https://www.hackintosh-forum.de/index.php/Thread/36796-M-2-key-M-to-M-2-key-A-E-for-WIFI-BT-adapter/)  
 
+![macOS High Sierra System overview Mi NoteBook Air 12.5 7y30](https://github.com/influenist/tree/master/Mi-NB-Air-125-7y30/Mi-NB-HS.png)
