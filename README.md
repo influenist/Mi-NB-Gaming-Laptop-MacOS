@@ -1,11 +1,12 @@
-# MacOS Effort for Xiaomi Mi Notebook & Gaming laptops
+# MacOS Effort for Xiaomi Mi NoteBook & Gaming laptops
 The project goal is to develop and maintain MacOS support for all Xiaomi Notebook (Air / Pro) & Gaming Laptop series.
 
 ## Currently Supported devices
 - Mi-NB-Air-125-7y30
 
 ## Instalation instructions
-The EFI builds  are APCI hotpatch based. Meaning your DSDT is patched via SSDT files loaded in `/EFI/CLOVER/ACPI/patched` which improves the compatibility between laptops within the series. Additional install instructions will be added together with Clover instructions.
+The EFI builds  are APCI hotpatch based. Meaning your DSDT is patched via SSDT files loaded in `/EFI/CLOVER/ACPI/patched` which improves the compatibility between laptops within the series.
+[Install instructions Mi Notebook Air 12.5 7y30](https://github.com/influenist/Mi-NB-Gaming-Laptop-MacOS/tree/master/Mi-NB-Air-125-7y30)
 
 ## Current release
 v0.1-beta.1 - [View the release page](https://github.com/influenist/Mi-NB-Gaming-Laptop-MacOS/releases)
