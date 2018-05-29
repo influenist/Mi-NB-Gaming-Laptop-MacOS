@@ -15,10 +15,10 @@ Appearance:
 ### How to install
 
 Open `Terminal.app` and run the follwing command:<br>
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/influenist/Mi-NB-Gaming-Laptop-MacOS/master/HIDPI-for-Mi-NB-Gaming-laptop/hidpi.sh)"`
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/influenist/Mi-NB-Gaming-Laptop-MacOS/master/HIDPI-for-Mi-NB-Gaming-laptops/hidpi.sh)"`
 
 Once HIDPI is installed execute the next comand to avoid wake-up issues:<br>
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/influenist/Mi-NB-Gaming-Laptop-MacOS/master/HIDPI-for-Mi-NB-Gaming-laptop/hidpi-wakeup-fix.sh)"`
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/influenist/Mi-NB-Gaming-Laptop-MacOS/master/HIDPI-for-Mi-NB-Gaming-laptops/hidpi-wakeup-fix.sh)"`
 
 ### Restore
 
