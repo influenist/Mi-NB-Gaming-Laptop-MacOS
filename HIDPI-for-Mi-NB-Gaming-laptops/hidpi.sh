@@ -54,7 +54,7 @@ function choose_icon()
 {
     #
     mkdir $thisDir/tmp/
-    curl -fsSL https://raw.githubusercontent.com/influenist/Mi-NB-Gaming-Laptop-MacOS/master/HIDPI-for-Mi-NB-Gaming-laptop/Icons.plist -o $thisDir/tmp/Icons.plist
+    curl -fsSL https://raw.githubusercontent.com/influenist/Mi-NB-Gaming-Laptop-MacOS/master/HIDPI-for-Mi-NB-Gaming-laptops/Icons.plist -o $thisDir/tmp/Icons.plist
 
 #
 cat << EOF
