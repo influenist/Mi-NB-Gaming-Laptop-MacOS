@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo curl -fsSL "https://raw.githubusercontent.com/influenist/Mi-NB-Gaming-Laptop-MacOS/master/HIDPI-for-Mi-NB-Gaming-laptop/org.zysuper.ricecracker.daemon.plist" /Library/LaunchAgents
-sudo curl -fsSL "https://raw.githubusercontent.com/influenist/Mi-NB-Gaming-Laptop-MacOS/master/HIDPI-for-Mi-NB-Gaming-laptop/riceCrackerDaemon" /usr/bin
+sudo curl -o /Library/LaunchAgents/org.zysuper.ricecracker.daemon.plist -fsSL "https://raw.githubusercontent.com/influenist/Mi-NB-Gaming-Laptop-MacOS/master/HIDPI-for-Mi-NB-Gaming-laptops/org.zysuper.ricecracker.daemon.plist"
+sudo curl -o /usr/bin/riceCrackerDaemon -fsSL "https://raw.githubusercontent.com/influenist/Mi-NB-Gaming-Laptop-MacOS/master/HIDPI-for-Mi-NB-Gaming-laptops/riceCrackerDaemon"
 
 sudo chmod 755 /usr/bin/riceCrackerDaemon
 sudo chown root:wheel /usr/bin/riceCrackerDaemon
