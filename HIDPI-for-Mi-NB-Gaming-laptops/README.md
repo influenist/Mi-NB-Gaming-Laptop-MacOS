@@ -10,7 +10,7 @@ In addition, this program is adjusted for Mi NoteBook to avoid wake problems.
 
 Appearance:
 
-![HIDPI.png](https://i.loli.net/2018/05/27/5b09ff7b4745c.jpg)
+![Display settings HIDPI Xiaomi NoteBook golden macOS](https://github.com/influenist/Mi-NB-Gaming-Laptop-MacOS/raw/master/HIDPI-for-Mi-NB-Gaming-laptops/hidpi-settings-screen.png)
 
 ### How to install
 
