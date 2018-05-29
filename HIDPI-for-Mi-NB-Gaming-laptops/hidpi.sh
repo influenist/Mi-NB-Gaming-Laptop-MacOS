@@ -31,6 +31,10 @@ EEF
 
     mbpicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a030-e1e1df.tiff"
 
+    mb12silvericon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a027-e1e1df.tiff"
+
+    mb12goldicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a027-ebd7bf.tiff"
+
     mbicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a028-9d9da0.tiff"
 
     lgicon=${Overrides}"DisplayVendorID-1e6d\/DisplayProductID-5b11.tiff"
@@ -58,28 +62,36 @@ cat << EOF
 |********** CHOOSE YOUR ICON ***********|
 ----------------------------------------
 (1) iMac
-(2) MacBook
-(3) MacBook Pro
-(4) LG Display
-(5) Stay the same
+(2) MacBook 12 Silver
+(3) Macbook 12 Gold
+(4) MacBook
+(5) MacBook Pro
+(6) LG Display
+(7) Stay the same
 
 EOF
-read -p "Enter your choice[1~5]: " logo
+read -p "Enter your choice[1~7]: " logo
 case $logo in
     1) Picon=$imacicon
 RP=("33" "68" "160" "90")
 ;;
-2) Picon=$mbicon
+2) Picon=$mb12silver
 RP=("52" "66" "122" "76")
 ;;
-3) Picon=$mbpicon
+3) Picon=$mb12goldicon
+RP=("52" "66" "122" "76")
+;;
+4) Picon=$mbicon
+RP=("52" "66" "122" "76")
+;;
+5) Picon=$mbpicon
 RP=("40" "62" "147" "92")
 ;;
-4) Picon=$lgicon
+6) Picon=$lgicon
 RP=("11" "47" "202" "114")
 DICON=${Overrides}"DisplayVendorID-1e6d\/DisplayProductID-5b11.icns"
 ;;
-5) rm -rf $thisDir/tmp/Icons.plist
+7) rm -rf $thisDir/tmp/Icons.plist
 ;;
 *) echo "Wrong choice, Bye";
 exit 0
