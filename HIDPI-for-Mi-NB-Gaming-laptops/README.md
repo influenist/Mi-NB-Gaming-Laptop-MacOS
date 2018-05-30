@@ -40,6 +40,16 @@ $ Vid=$(echo "obase=16;$VendorID" | bc | tr 'A-Z' 'a-z')
 $ rm -rf ./DisplayVendorID-$Vid
 $ cp -r ./backup/* ./
 ```
+## Changelog
+
+v0.1 - 30-05-2018
+Initial release: Screen resolution optimization for Mi Notebook ranges Air and Pro and PPMM. 
+
+## To-do
+
+- TIFF icon for NB Air 13 Golden
+- Selectable Screen resolution range (Narrow / Wide / Wide to Narrow / Narrow to Wide) 
+- Feel free to come with suggestions
 
 ## Credit
 [xzhih](https://github.com/xzhih) for providing base function of this program.<br>
