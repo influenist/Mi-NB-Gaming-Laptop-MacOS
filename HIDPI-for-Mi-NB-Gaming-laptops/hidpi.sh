@@ -27,17 +27,11 @@ EEF
 
     DICON="com\.apple\.cinema-display"
 
-    imacicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a032.tiff"
+    nb12sicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a027-e1e1df.tiff"
 
-    mbpicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a030-e1e1df.tiff"
-
-    mb12silvericon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a027-e1e1df.tiff"
-
-    mb12goldicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a027-ebd7bf.tiff"
-
-    mbicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a028-9d9da0.tiff"
-
-    lgicon=${Overrides}"DisplayVendorID-1e6d\/DisplayProductID-5b11.tiff"
+    nb12gicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a027-ebd7bf.tiff"
+    
+    nbpicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a030-9d9da0.tiff"
 
     if [[ ! -d $thatDir/backup ]]; then
         echo "Backing up"
@@ -49,8 +43,8 @@ EEF
     fi
 }
 
-# CHOOSE ICON
-function choose_icon()
+# CHOOSE NOTEBOOK
+function choose_notebook()
 {
     #
     mkdir $thisDir/tmp/
@@ -59,39 +53,26 @@ function choose_icon()
 #
 cat << EOF
 ----------------------------------------
-|********** CHOOSE YOUR ICON ***********|
+|******** CHOOSE YOUR NOTEBOOK *********|
 ----------------------------------------
-(1) iMac
-(2) MacBook 12 Silver
-(3) Macbook 12 Gold
-(4) MacBook
-(5) MacBook Pro
-(6) LG Display
-(7) Stay the same
+(1) Mi NoteBook Air 12.5 - Silver
+(2) Mi NoteBook Air 12.5 - Golden
+(3) Mi NoteBook Pro 15.6
 
 EOF
-read -p "Enter your choice[1~7]: " logo
-case $logo in
-    1) Picon=$imacicon
-RP=("33" "68" "160" "90")
-;;
-2) Picon=$mb12silver
+read -p "Enter your choice[1~2]: " notebook
+case $notebook in
+    1) NB=("AAAHgAAABDg=" "AAAPAAAACHAA" "AAAMgAAABwgA" "AAALQAAABlQA" "AAAKAAAABaAA" "12.582678")
+Picon=$nb12sicon
 RP=("52" "66" "122" "76")
 ;;
-3) Picon=$mb12goldicon
+2) NB=("AAAHgAAABDg=" "AAAPAAAACHAA" "AAAMgAAABwgA" "AAALQAAABlQA" "AAAKAAAABaAA" "12.582678")
+Picon=$nb12gicon
 RP=("52" "66" "122" "76")
 ;;
-4) Picon=$mbicon
-RP=("52" "66" "122" "76")
-;;
-5) Picon=$mbpicon
+3) NB=("AAAHgAAABDg=" "AAAPAAAACHAA" "AAAMgAAABkAA" "AAAMgAAABwgA" "AAALQAAABlQA" "11.1023622")
+Picon=$nbpicon
 RP=("40" "62" "147" "92")
-;;
-6) Picon=$lgicon
-RP=("11" "47" "202" "114")
-DICON=${Overrides}"DisplayVendorID-1e6d\/DisplayProductID-5b11.icns"
-;;
-7) rm -rf $thisDir/tmp/Icons.plist
 ;;
 *) echo "Wrong choice, Bye";
 exit 0
@@ -130,31 +111,31 @@ cat > "$dpiFile" <<-\HIDPI
             <integer>VID</integer>
         <key>DisplayProductName</key>
             <string>Color LCD</string>
+        <key>DisplayPixelDimensions</key>
+            <data>DPDM=</data>
         <key>IODisplayEDID</key>
             <data>EDid</data>
         <key>scale-resolutions</key>
             <array>
-                <data>
-                AAAPAAAACHAA
-                </data>
-                <data>
-                AAAMgAAABkAA
-                </data>
-                <data>
-                AAAMgAAABwgA
-                </data>
-                <data>
-                AAALQAAABlQA
-                </data>
+                <data>SC1</data>
+                <data>SC2</data>
+                <data>SC3</data>
+                <data>SC4</data>
             </array>
         <key>target-default-ppmm</key>
-            <real>10.1510574</real>
+            <real>PPM</real>
     </dict>
 </plist>
 HIDPI
 
     sed -i '' "s/VID/$VendorID/g" $dpiFile
     sed -i '' "s/PID/$ProductID/g" $dpiFile
+    sed -i '' "s/DPDM/${NB[0]}/g" $dpiFile
+    sed -i '' "s/SC1/${NB[1]}/g" $dpiFile
+    sed -i '' "s/SC2/${NB[2]}/g" $dpiFile
+    sed -i '' "s/SC3/${NB[3]}/g" $dpiFile
+    sed -i '' "s/SC4/${NB[4]}/g" $dpiFile
+    sed -i '' "s/PPM/${NB[5]}/g" $dpiFile
 }
 
 # Clean up
@@ -169,7 +150,7 @@ function end()
 # OPEN
 function enable_hidpi()
 {
-    choose_icon
+    choose_notebook
     main
     sed -i "" "/.*IODisplayEDID/d" $dpiFile
     sed -i "" "/.*EDid/d" $dpiFile
@@ -179,7 +160,7 @@ function enable_hidpi()
 # 开挂
 function enable_hidpi_with_patch()
 {
-    choose_icon
+    choose_notebook
     main
     sed -i '' "s:EDid:${EDid}:g" $dpiFile
     end
@@ -203,9 +184,9 @@ function start()
 # 
 cat << EOF
 
-(1) OPEN HIDPI
+(1) OPEN HIDPI (Try this first)
 (2) OPEN HIDPI（Inject EDID）
-(3) CLOSE HIDPI
+(3) DISABLE HIDPI
 
 EOF
 read -p "Enter your choice[1~3]: " input
