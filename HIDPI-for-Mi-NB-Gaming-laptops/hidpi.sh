@@ -6,7 +6,7 @@ function init()
 #
 cat << EEF
 ----------------------------------------
-|*************** HIDPI ****************|
+|****** HIDPI - v0.1 - 30-05-2018 ******|
 ----------------------------------------
 EEF
     #
@@ -27,11 +27,15 @@ EEF
 
     DICON="com\.apple\.cinema-display"
 
-    nb12sicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a027-e1e1df.tiff"
+    nba12sicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a027-e1e1df.tiff"
 
-    nb12gicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a027-ebd7bf.tiff"
+    nba12gicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a027-ebd7bf.tiff"
     
-    nbpicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a030-9d9da0.tiff"
+    nba13sicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a033-e1e1df.tiff"
+    
+    nba13sgicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a033-9d9da0.tiff"
+    
+    nbp15sgicon=${Overrides}"DisplayVendorID-610\/DisplayProductID-a030-9d9da0.tiff"
 
     if [[ ! -d $thatDir/backup ]]; then
         echo "Backing up"
@@ -55,23 +59,33 @@ cat << EOF
 ----------------------------------------
 |******** CHOOSE YOUR NOTEBOOK *********|
 ----------------------------------------
-(1) Mi NoteBook Air 12.5 - Silver
-(2) Mi NoteBook Air 12.5 - Golden
-(3) Mi NoteBook Pro 15.6
+(1) Mi NoteBook Air 12 - Silver
+(2) Mi NoteBook Air 12 - Golden
+(3) Mi NoteBook Air 13 - Silver
+(4) Mi NoteBook Air 13 - Space Gray
+(5) Mi NoteBook Pro 15 - Space Gray
 
 EOF
-read -p "Enter your choice[1~2]: " notebook
+read -p "Enter your choice[1~5]: " notebook
 case $notebook in
-    1) NB=("AAAHgAAABDg=" "AAAPAAAACHAA" "AAAMgAAABwgA" "AAALQAAABlQA" "AAAKAAAABaAA" "12.582678")
-Picon=$nb12sicon
+    1) NB=("AAAHgAAABDg=" "AAAPAAAACHAA" "AAANwAAAB7wA" "AAAMgAAABwgA" "AAAKrAAABgAA" "12.582678")
+Picon=$nba12sicon
 RP=("52" "66" "122" "76")
 ;;
-2) NB=("AAAHgAAABDg=" "AAAPAAAACHAA" "AAAMgAAABwgA" "AAALQAAABlQA" "AAAKAAAABaAA" "12.582678")
-Picon=$nb12gicon
+2) NB=("AAAHgAAABDg=" "AAAPAAAACHAA" "AAANwAAAB7wA" "AAAMgAAABwgA" "AAAKrAAABgAA" "12.582678")
+Picon=$nba12gicon
 RP=("52" "66" "122" "76")
 ;;
-3) NB=("AAAHgAAABDg=" "AAAPAAAACHAA" "AAAMgAAABkAA" "AAAMgAAABwgA" "AAALQAAABlQA" "11.1023622")
-Picon=$nbpicon
+3) NB=("AAAHgAAABDg=" "AAAPAAAACHAA" "AAANwAAAB7wA" "AAAMgAAABwgA" "AAAKrAAABgAA" "13,070866")
+Picon=$nba13sicon
+RP=("48" "62" "131" "83")
+;;
+4) NB=("AAAHgAAABDg=" "AAAPAAAACHAA" "AAANwAAAB7wA" "AAAMgAAABwgA" "AAAKrAAABgAA" "13,070866")
+Picon=$nba13sgicon
+RP=("48" "62" "131" "83")
+;;
+5) NB=("AAAHgAAABDg=" "AAAPAAAACHAA" "AAANwAAAB7wA" "AAAMgAAABwgA" "AAAKrAAABgAA" "11.1023622")
+Picon=$nbp15sgicon
 RP=("40" "62" "147" "92")
 ;;
 *) echo "Wrong choice, Bye";
