@@ -1,8 +1,10 @@
 # Enable HIDPI for Xiaomi Mi NoteBook and Gaming Laptop
 
 ## This method is currently tested and working on
-- Mi NB Air 125 7y30
-- Mi NB Pro
+- Mi NB Air 12.5
+- Mi NB Air 13.3
+- Mi NB Air 13.3 2018
+- Mi NB Pro 15.6
 
 ### Instruction
 
