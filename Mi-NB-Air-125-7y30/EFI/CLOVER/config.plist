@@ -326,8 +326,10 @@
 		<false/>
 		<key>DefaultVolume</key>
 		<string>Mac OS</string>
-		<key>NeverHibernate</key>
+		<key>HibernationFixup</key>
 		<true/>
+		<key>NeverHibernate</key>
+		<false/>
 		<key>NoEarlyProgress</key>
 		<true/>
 		<key>Timeout</key>
@@ -392,8 +394,6 @@
 		<dict>
 			<key>#Kaby Lake-Comment</key>
 			<string>To avoid automatic Clover fake device-id (Skylake) injection</string>
-			<key>IntelGFX</key>
-			<string>0x59168086</string>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -404,7 +404,7 @@
 			<key>HighCurrent</key>
 			<true/>
 			<key>Inject</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<true/>
@@ -533,7 +533,8 @@
 		<false/>
 		<key>Hide</key>
 		<array>
-			<string>Preboot</string>
+			<string>Preboot install</string>
+			<string>Recover</string>
 		</array>
 		<key>Language</key>
 		<string>en:0</string>
@@ -611,6 +612,8 @@
 			<key>Intel</key>
 			<true/>
 		</dict>
+		<key>ig-platform-id</key>
+		<string>0x591e0000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -801,7 +804,7 @@
 				<key>MatchOS</key>
 				<string>10.13.x</string>
 				<key>Name</key>
-				<string> com.apple.iokit.IOGraphicsFamily</string>
+				<string>com.apple.iokit.IOGraphicsFamily</string>
 				<key>Replace</key>
 				<data>
 				AQAA6yI=
@@ -949,12 +952,13 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>0x591b0000, 32MB BIOS, 19MB framebuffer 9MB cursor bytes (credit RehabMan)</string>
+				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				AABgAgAAUAE=
+				AAAIAAIAAACYAAAAAQUJAAAEAACHAQAAAgQKAAAEAACH
+				AQAA/wAAAAEAAAAgAAAA
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
@@ -962,25 +966,8 @@
 				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
-				AAAwAQAAkAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>0x591b0000, 0105 instead of 0306, DP</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				AgQKAAAEAACHAQAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AgQKAAAIAACHAQAA
+				AAAIAAIAAACYAAAAAQUJAAAIAACHAQAAAgQKAAAIAACH
+				AQAA/wAAAAEAAAAgAAAA
 				</data>
 			</dict>
 		</array>
@@ -1116,7 +1103,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02731101OPDKG1A8</string>
+		<string>C02715501GUFF4KJA</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -1175,14 +1162,14 @@
 				</dict>
 			</array>
 		</dict>
-		<key>Mobile</key>
-		<true/>
 		<key>PlatformFeature</key>
 		<string>0x1A</string>
 		<key>ProductName</key>
 		<string>MacBook10,1</string>
 		<key>SerialNumber</key>
-		<string>C02V559EHH27</string>
+		<string>C02TL1FGHH27</string>
+		<key>Trust</key>
+		<false/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

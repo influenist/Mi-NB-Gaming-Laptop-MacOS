@@ -1,0 +1,84 @@
+4:850  0:556  Found UEFI Acpi 2.0 RSDP at 8CEFD014
+4:850  0:000  Saving ACPI tables from RSDP 8CEFD014 to EFI\CLOVER\ACPI\origin ...
+4:850  0:000   8CEFD014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+4:860  0:010    (Xsdt: 8CEBF188, Rsdt: 8CEBF0C4)
+4:860  0:000    8CEBF188: 'XSDT', 'XMCC1607', Rev: 1, Len: 284 -> XSDT.aml
+4:863  0:002    8CEBF0C4: 'RSDT', 'XMCC1607', Rev: 1, Len: 160 -> RSDT.aml
+4:868  0:004    Tables in Xsdt: 31
+4:868  0:000    0. 8CEEA000: 'FACP', 'XMCC1607', Rev: 5, Len: 268 -> FACP.aml
+4:871  0:003        (Dsdt: 8CEC4000, Facs: 8CE5B000, XDsdt: 8CEC4000, XFacs: 0)
+4:871  0:000        8CEC4000: 'DSDT', 'XMCC1607', Rev: 2, Len: 141468 -> DSDT.aml
+4:879  0:007        8CE5B000: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+4:883  0:003    1. 8CEFC000: 'UEFI', 'XMCC1607', Rev: 1, Len: 566 -> UEFI.aml
+4:886  0:003    2. 8CEFB000: 'UEFI', 'XMCC1607', Rev: 1, Len: 66 -> UEFI.aml
+4:892  0:005    3. 8CEFA000: 'MSDM', 'XMCC1607', Rev: 3, Len: 85 -> MSDM.aml
+4:895  0:003    4. 8CEF9000: 'SSDT', 'XMCC1607', Rev: 2, Len: 1219 -> SSDT-0-XMCC1607.aml
+4:898  0:003    5. 8CEF8000: 'SSDT', 'XMCC1607', Rev: 2, Len: 70 -> SSDT-1-XMCC1607.aml
+4:903  0:005    6. 8CEF7000: 'TPM2', 'XMCC1607', Rev: 3, Len: 52 -> TPM2.aml
+4:907  0:003    7. 8CEF3000: 'SSDT', 'XMCC1607', Rev: 2, Len: 12592 -> SSDT-2-XMCC1607.aml
+4:910  0:003    8. 8CEEF000: 'SSDT', 'XMCC1607', Rev: 2, Len: 15212 -> SSDT-3-XMCC1607.aml
+4:914  0:003    9. 8CEEE000: 'ASF!', 'XMCC1607', Rev: 32, Len: 165 -> ASF!.aml
+4:918  0:003    10. 8CEED000: 'ASPT', 'XMCC1607', Rev: 7, Len: 52 -> ASPT.aml
+4:922  0:004    11. 8CEEC000: 'BOOT', 'XMCC1607', Rev: 1, Len: 40 -> BOOT.aml
+4:925  0:003    12. 8CEEB000: 'DBGP', 'XMCC1607', Rev: 1, Len: 52 -> DBGP.aml
+4:929  0:003    13. 8CEE9000: 'HPET', 'XMCC1607', Rev: 1, Len: 56 -> HPET.aml
+4:932  0:003    14. 8CEE8000: 'APIC', 'XMCC1607', Rev: 3, Len: 188 -> APIC.aml
+4:936  0:003    15. 8CEE7000: 'MCFG', 'XMCC1607', Rev: 1, Len: 60 -> MCFG.aml
+4:940  0:003    16. 8CEC3000: 'SSDT', 'XMCC1607', Rev: 2, Len: 995 -> SSDT-4-XMCC1607.aml
+4:944  0:004    17. 8CEC2000: 'SSDT', 'XMCC1607', Rev: 2, Len: 444 -> SSDT-5-XMCC1607.aml
+4:948  0:003    18. 8CEC1000: 'LPIT', 'XMCC1607', Rev: 1, Len: 148 -> LPIT.aml
+4:951  0:003    19. 8CEC0000: 'WSMT', 'XMCC1607', Rev: 1, Len: 40 -> WSMT.aml
+4:954  0:003    20. 8CEBE000: 'SSDT', 'XMCC1607', Rev: 2, Len: 671 -> SSDT-6-XMCC1607.aml
+4:958  0:003    21. 8CEBD000: 'SSDT', 'XMCC1607', Rev: 1, Len: 838 -> SSDT-7-XMCC1607.aml
+4:961  0:003    22. 8CEB9000: 'SSDT', 'XMCC1607', Rev: 2, Len: 12290 -> SSDT-8-XMCC1607.aml
+4:966  0:004    23. 8CEB8000: 'SSDT', 'XMCC1607', Rev: 2, Len: 1310 -> SSDT-9-XMCC1607.aml
+4:970  0:004    24. 8CEB7000: 'DBGP', 'XMCC1607', Rev: 1, Len: 52 -> DBGP.aml
+4:976  0:005    25. 8CEB6000: 'DBG2', 'XMCC1607', Rev: 0, Len: 84 -> DBG2.aml
+4:980  0:003    26. 8CEB4000: 'SSDT', 'XMCC1607', Rev: 2, Len: 4272 -> SSDT-10-XMCC1607.aml
+4:983  0:003    27. 8CEB3000: 'SSDT', 'XMCC1607', Rev: 2, Len: 3806 -> SSDT-11-XMCC1607.aml (Found hidden SSDT 7 pcs)
+4:987  0:003        * 8AE556D8: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1287  53 53 44 54 07 05 00 00 02 0B 50 6D 52 65 66 00 Internal length = 1287 -> SSDT-x11_0-Cpu0Ist.aml
+4:990  0:003        * 8AD77358: 'SSDT', 'ApIst', Rev: 2, Len: 1628  53 53 44 54 5C 06 00 00 02 A9 50 6D 52 65 66 00 Internal length = 1628 -> SSDT-x11_1-ApIst.aml
+4:995  0:004        * 8AD76018: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1023  53 53 44 54 FF 03 00 00 02 A9 50 6D 52 65 66 00 Internal length = 1023 -> SSDT-x11_2-Cpu0Cst.aml
+4:998  0:003        * 8AD76DD8: 'SSDT', 'ApCst', Rev: 2, Len: 394  53 53 44 54 8A 01 00 00 02 33 50 6D 52 65 66 00 Internal length = 394 -> SSDT-x11_3-ApCst.aml
+5:002  0:003        * 8AD77018: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 277  53 53 44 54 15 01 00 00 02 A8 50 6D 52 65 66 00 Internal length = 277 -> SSDT-x11_4-Cpu0Hwp.aml
+5:005  0:003        * 8AD77BD8: 'SSDT', 'ApHwp', Rev: 2, Len: 407  53 53 44 54 97 01 00 00 02 EB 50 6D 52 65 66 00 Internal length = 407 -> SSDT-x11_5-ApHwp.aml
+5:009  0:003        * 8AD77158: 'SSDT', 'HwpLvt', Rev: 2, Len: 420  53 53 44 54 A4 01 00 00 02 36 50 6D 52 65 66 00 Internal length = 420 -> SSDT-x11_6-HwpLvt.aml
+5:012  0:003  
+5:012  0:000    28. 8CEB2000: 'DMAR', 'XMCC1607', Rev: 1, Len: 204 -> DMAR.aml
+5:017  0:004    29. 8CEB1000: 'FPDT', 'XMCC1607', Rev: 1, Len: 68 -> FPDT.aml
+5:021  0:003    30. 8CEB0000: 'BGRT', 'XMCC1607', Rev: 1, Len: 56 -> BGRT.aml
+5:024  0:003    Tables in Rsdt: 31
+5:024  0:000    0. 8CEEA000: 'FACP', 'XMCC1607', Rev: 5, Len: 268
+5:024  0:000        (Dsdt: 8CEC4000, Facs: 8CE5B000, XDsdt: 8CEC4000, XFacs: 0)
+5:024  0:000        8CEC4000: 'DSDT', 'XMCC1607', Rev: 2, Len: 141468
+5:026  0:002        8CE5B000: 'FACS', Ver: 2, Len: 64
+5:026  0:000    1. 8CEFC000: 'UEFI', 'XMCC1607', Rev: 1, Len: 566
+5:026  0:000    2. 8CEFB000: 'UEFI', 'XMCC1607', Rev: 1, Len: 66
+5:026  0:000    3. 8CEFA000: 'MSDM', 'XMCC1607', Rev: 3, Len: 85
+5:026  0:000    4. 8CEF9000: 'SSDT', 'XMCC1607', Rev: 2, Len: 1219
+5:026  0:000    5. 8CEF8000: 'SSDT', 'XMCC1607', Rev: 2, Len: 70
+5:026  0:000    6. 8CEF7000: 'TPM2', 'XMCC1607', Rev: 3, Len: 52
+5:026  0:000    7. 8CEF3000: 'SSDT', 'XMCC1607', Rev: 2, Len: 12592
+5:026  0:000    8. 8CEEF000: 'SSDT', 'XMCC1607', Rev: 2, Len: 15212
+5:026  0:000    9. 8CEEE000: 'ASF!', 'XMCC1607', Rev: 32, Len: 165
+5:026  0:000    10. 8CEED000: 'ASPT', 'XMCC1607', Rev: 7, Len: 52
+5:026  0:000    11. 8CEEC000: 'BOOT', 'XMCC1607', Rev: 1, Len: 40
+5:026  0:000    12. 8CEEB000: 'DBGP', 'XMCC1607', Rev: 1, Len: 52
+5:026  0:000    13. 8CEE9000: 'HPET', 'XMCC1607', Rev: 1, Len: 56
+5:026  0:000    14. 8CEE8000: 'APIC', 'XMCC1607', Rev: 3, Len: 188
+5:026  0:000    15. 8CEE7000: 'MCFG', 'XMCC1607', Rev: 1, Len: 60
+5:026  0:000    16. 8CEC3000: 'SSDT', 'XMCC1607', Rev: 2, Len: 995
+5:026  0:000    17. 8CEC2000: 'SSDT', 'XMCC1607', Rev: 2, Len: 444
+5:026  0:000    18. 8CEC1000: 'LPIT', 'XMCC1607', Rev: 1, Len: 148
+5:026  0:000    19. 8CEC0000: 'WSMT', 'XMCC1607', Rev: 1, Len: 40
+5:026  0:000    20. 8CEBE000: 'SSDT', 'XMCC1607', Rev: 2, Len: 671
+5:026  0:000    21. 8CEBD000: 'SSDT', 'XMCC1607', Rev: 1, Len: 838
+5:026  0:000    22. 8CEB9000: 'SSDT', 'XMCC1607', Rev: 2, Len: 12290
+5:026  0:000    23. 8CEB8000: 'SSDT', 'XMCC1607', Rev: 2, Len: 1310
+5:026  0:000    24. 8CEB7000: 'DBGP', 'XMCC1607', Rev: 1, Len: 52
+5:026  0:000    25. 8CEB6000: 'DBG2', 'XMCC1607', Rev: 0, Len: 84
+5:026  0:000    26. 8CEB4000: 'SSDT', 'XMCC1607', Rev: 2, Len: 4272
+5:026  0:000    27. 8CEB3000: 'SSDT', 'XMCC1607', Rev: 2, Len: 3806
+5:026  0:000    28. 8CEB2000: 'DMAR', 'XMCC1607', Rev: 1, Len: 204
+5:026  0:000    29. 8CEB1000: 'FPDT', 'XMCC1607', Rev: 1, Len: 68
+5:026  0:000    30. 8CEB0000: 'BGRT', 'XMCC1607', Rev: 1, Len: 56
