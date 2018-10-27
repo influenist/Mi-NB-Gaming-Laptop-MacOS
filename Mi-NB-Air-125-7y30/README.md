@@ -1,9 +1,7 @@
 # Install instructions Mi Notebook Air 12.5 7y30
 
 ## Step 1 - Get Access to Mac OS
-To create a MacOS usb installer you will first need either a. Access to a Mac or b. A virtual machine running macOS. If you do not have a Mac or borrow then create a virtual machine running macOS using one of the two links below depending on whether you are using Intel or AMD as your CPU/Processor.
-
-[VIRTUAL MACOS: USE MACOS SIERRA ON A VIRTUAL MACHINE WITH VMWARE](https://hackintosher.com/guides/virtual-macos-use-macos-sierra-virtual-machine-vmware/) (Hackintosher)
+To create a MacOS usb installer you will first need either access to a Mac which runs macOS. If you do not have one, find a friend who does!
 
 ## Step 2 - Creating the macOS Installer
 [How to make a USB flash drive installer for macOS](https://hackintosher.com/guides/make-macos-flash-drive-installer/) (Hackintosher)
