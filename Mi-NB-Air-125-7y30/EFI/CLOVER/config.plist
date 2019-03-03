@@ -237,8 +237,6 @@
 		<string>igfxrst=1</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
-		<key>HibernationFixup</key>
-		<true/>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>NoEarlyProgress</key>
@@ -251,27 +249,18 @@
 	<key>CPU</key>
 	<dict>
 		<key>HWPEnable</key>
-		<true/>
-		<key>Type</key>
-		<string>0x0995</string>
+		<false/>
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
-		<dict>
-			<key>#Inject</key>
-			<string>0x0887</string>
-			<key>AFGLowPowerState</key>
-			<true/>
-			<key>Inject</key>
-			<string>3</string>
-			<key>ResetHDA</key>
-			<true/>
-		</dict>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
+				<key>device-id</key>
+				<data>
+				cKEAAA==
+				</data>
 				<key>layout-id</key>
 				<data>
 				AwAAAA==
@@ -281,15 +270,27 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>
-				AAAWWQ==
+				AAAeWQ==
 				</data>
 				<key>device-id</key>
 				<data>
-				FlkAAA==
+				HlkAAA==
 				</data>
 				<key>disable-external-gpu</key>
 				<data>
 				AQAAAA==
+				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con0-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con0-pipe</key>
+				<data>
+				EgAAAA==
 				</data>
 				<key>framebuffer-con1-enable</key>
 				<data>
@@ -297,9 +298,21 @@
 				</data>
 				<key>framebuffer-con1-pipe</key>
 				<data>
-				CgAAAA==
+				EgAAAA==
 				</data>
 				<key>framebuffer-con1-type</key>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-con2-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-pipe</key>
+				<data>
+				EgAAAA==
+				</data>
+				<key>framebuffer-con2-type</key>
 				<data>
 				AAgAAA==
 				</data>
@@ -315,26 +328,29 @@
 				<data>
 				AAAwAQ==
 				</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>
+				AAAAgA==
+				</data>
 			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
-			<key>AddClockID</key>
-			<true/>
 			<key>FixOwnership</key>
 			<true/>
 			<key>HighCurrent</key>
-			<true/>
+			<false/>
 			<key>Inject</key>
 			<false/>
 		</dict>
-		<key>UseIntelHDMI</key>
-		<true/>
 	</dict>
 	<key>GUI</key>
 	<dict>
-		<key>Language</key>
-		<string>en:0</string>
+		<key>Hide</key>
+		<array>
+			<string>Preboot</string>
+			<string>Recovery</string>
+		</array>
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
@@ -368,21 +384,19 @@
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<true/>
+			<false/>
 			<key>NVidia</key>
 			<false/>
 		</dict>
-		<key>ig-platform-id</key>
-		<string>0x591e0000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleRTC</key>
 		<true/>
 		<key>KernelLapic</key>
-		<true/>
+		<false/>
 		<key>KernelPm</key>
-		<true/>
+		<false/>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
@@ -458,102 +472,38 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
+				<string>Boot gfx glitch fixup</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				RiV1VCUwNHgA
+				AQAAdSI=
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleBacklight</string>
+				<string>com.apple.iokit.IOGraphicsFamily</string>
 				<key>Replace</key>
 				<data>
-				RiV1VHh4eHgA
+				AQAA6yI=
 				</data>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				YQLsEA==
+				AEFQUExFIFNTRAA=
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				YgLsEA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				hQjsEA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				hBnUEQ==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				NQLsEA==
-				</data>
-			</dict>
-			<dict>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AAAIAAIAAACYAAAAAQUJAAAEAACHAQAAAgQKAAAEAACH
-				AQAA/wAAAAEAAAAgAAAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AAAIAAIAAACYAAAAAQUJAAAIAACHAQAAAgQKAAAIAACH
-				AQAA/wAAAAEAAAAgAAAA
+				AAAAAAAAAAAAAAA=
 				</data>
 			</dict>
 		</array>
