@@ -4,7 +4,8 @@
 To create a MacOS usb installer you will first need either access to a Mac which runs macOS. If you do not have one, find a friend who does!
 
 ## Step 2 - Creating the macOS Installer
-[How to make a USB flash drive installer for macOS](https://hackintosher.com/guides/make-macos-flash-drive-installer/) (Hackintosher)
+[How to make a USB flash drive installer for macOS](https://hackintosher.com/guides/make-macos-flash-drive-installer/) (Hackintosher) 
+Don't have MacOS? Check the readme for creating an [internet installer](https://www.hackintosh-forum.de/lexicon/entry/105-recovery-stick/?synonym=163) (hackintosh-forum.de)
 
 ## Step 3 - Add Clover to EFI Boot Partition
 1. Download [Clover Configurator](http://mackie100projects.altervista.org/download-clover-configurator/)

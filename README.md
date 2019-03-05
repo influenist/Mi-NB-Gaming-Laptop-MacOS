@@ -4,14 +4,22 @@ The project goal is to develop and maintain MacOS support for all Xiaomi Noteboo
 ## Currently Supported devices
 - Mi-NB-Air-125-7y30
 
+## Mi Notebooks supported by other project
+- [Mi-NB-Pro](https://github.com/johnnync13/EFI-Xiaomi-Notebook-air-12-5) by stevezhengshiqi
+- [Mi-NB-Air-133-Gen1](https://github.com/johnnync13/Xiaomi-Notebook-Air-1Gen) by johnnync13 
+- [Mi-NB-Air-133-2018](https://github.com/johnnync13/Xiaomi-Mi-Air) by johnnync13
+- [Mi-NB-Air-125-6y30](https://github.com/johnnync13/EFI-Xiaomi-Notebook-air-12-5) by johnnync13
+- [Mi-Gaming-Laptop](https://github.com/johnnync13/XiaomiGaming) by johnnync13
+
 ## Instalation instructions
 The EFI builds  are APCI hotpatch based. Meaning your DSDT is patched via SSDT files loaded in `/EFI/CLOVER/ACPI/patched` which improves the compatibility between laptops within the series.<br>
 [Install instructions Mi Notebook Air 12.5 7y30](https://github.com/influenist/Mi-NB-Gaming-Laptop-MacOS/tree/master/Mi-NB-Air-125-7y30)
 
 ## Current release
-v0.1-beta.1 - [View the release page](https://github.com/influenist/Mi-NB-Gaming-Laptop-MacOS/releases)
+v1-2-mojave-10.14.3 - [View the release page](https://github.com/influenist/Mi-NB-Gaming-Laptop-MacOS/releases)
 
 ## Credits
+
 - Rehabman
 - vit9696
 - Pike R. Alpha
