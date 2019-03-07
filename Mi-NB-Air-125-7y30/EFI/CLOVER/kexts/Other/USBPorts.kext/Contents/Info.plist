@@ -44,7 +44,7 @@
 				<integer>1500</integer>
 				<key>port-count</key>
 				<data>
-				DQAAAA==
+				DwAAAA==
 				</data>
 				<key>ports</key>
 				<dict>
@@ -73,6 +73,15 @@
 						<key>port</key>
 						<data>
 						DQAAAA==
+						</data>
+					</dict>
+					<key>SS03</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>
+						DwAAAA==
 						</data>
 					</dict>
 				</dict>
