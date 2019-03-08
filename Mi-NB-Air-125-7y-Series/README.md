@@ -5,7 +5,7 @@
 - i5 7y54 4 GB / 8 GB
 
 ## Step 1 - Get Access to Mac OS
-To create a MacOS usb installer you will first need either access to a Mac which runs macOS. If you do not have one, find a friend who does!
+To create a MacOS usb installer you will first need either access to a Mac which runs macOS. If you do not have one, please follow the windows recovery method from Hackintosh-Forum.de as noted below.
 
 ## Step 2 - Creating the macOS Installer
 [How to make a USB flash drive installer for macOS](https://hackintosher.com/guides/make-macos-flash-drive-installer/) (Hackintosher) 
