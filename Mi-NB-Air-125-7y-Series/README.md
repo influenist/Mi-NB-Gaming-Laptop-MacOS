@@ -1,4 +1,8 @@
-# Install instructions Mi Notebook Air 12.5 7y30
+# Install instructions Mi Notebook Air 12.5 7yXX Series
+
+### Supported devices:
+- m3 7y30 4 GB
+- i5 7y54 4 GB / 8 GB
 
 ## Step 1 - Get Access to Mac OS
 To create a MacOS usb installer you will first need either access to a Mac which runs macOS. If you do not have one, find a friend who does!
