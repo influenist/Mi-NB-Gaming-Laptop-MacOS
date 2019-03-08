@@ -2,10 +2,11 @@
 The project goal is to develop and maintain MacOS support for all Xiaomi Notebook (Air / Pro) & Gaming Laptop series.
 
 ## Currently Supported devices
-- Mi-NB-Air-125-7y30
+- Mi NoteBook Air 12.5 m3 7y30
+- Mi NoteBook Air 12.5 i5 7y54 (4GB / 8GB)
 
 ## Mi Notebooks supported by other project
-- [Mi-NB-Pro](https://github.com/johnnync13/EFI-Xiaomi-Notebook-air-12-5) by stevezhengshiqi
+- [Mi-NB-Pro](https://github.com/daliansky/XiaoMi-Pro/) by stevezhengshiqi
 - [Mi-NB-Air-133-Gen1](https://github.com/johnnync13/Xiaomi-Notebook-Air-1Gen) by johnnync13 
 - [Mi-NB-Air-133-2018](https://github.com/johnnync13/Xiaomi-Mi-Air) by johnnync13
 - [Mi-NB-Air-125-6y30](https://github.com/johnnync13/EFI-Xiaomi-Notebook-air-12-5) by johnnync13
