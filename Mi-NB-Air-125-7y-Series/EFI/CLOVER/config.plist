@@ -13,7 +13,7 @@
 			<key>Fixes</key>
 			<dict>
 				<key>AddPNLF</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -21,7 +21,7 @@
 					<key>Comment</key>
 					<string>GLAN:_PRW to XPRW</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>X1BSVw==</data>
 					<key>Replace</key>
@@ -33,7 +33,7 @@
 					<key>Comment</key>
 					<string>HDAS:_PRW to XPRW</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>X1BSVw==</data>
 					<key>Replace</key>
@@ -45,7 +45,7 @@
 					<key>Comment</key>
 					<string>XDCI:_PRW to XPRW</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>X1BSVw==</data>
 					<key>Replace</key>
@@ -57,7 +57,7 @@
 					<key>Comment</key>
 					<string>XHC:_PRW to XPRW</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>X1BSVw==</data>
 					<key>Replace</key>
@@ -350,9 +350,9 @@
 			</dict>
 		</dict>
 		<key>SetIntelBacklight</key>
-		<true/>
+		<false/>
 		<key>SetIntelMaxBacklight</key>
-		<true/>
+		<false/>
 		<key>USB</key>
 		<dict>
 			<key>FixOwnership</key>
