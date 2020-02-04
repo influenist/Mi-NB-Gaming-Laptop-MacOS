@@ -141,13 +141,13 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>change GPI0._STA to GPI0.XSTA</string>
+				<string>Rename GPI0._STA to GPI0.XSTA</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>X1NUQQ==</data>
+				<data>FB1fU1RBAKAJk1M=</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -155,7 +155,7 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>WFNUQQ==</data>
+				<data>FB1YU1RBAKAJk1M=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -163,7 +163,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>R1BJMA==</data>
+				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -173,7 +173,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>X0NSUw==</data>
+				<data>FDNfQ1JTAA==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -181,7 +181,7 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>WENSUw==</data>
+				<data>FDNYQ1JTAA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -189,7 +189,33 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>VFBEMA==</data>
+				<data>RFNEVA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Rename TPD0._INI to XINI (Trackpad)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<false/>
+				<key>Find</key>
+				<data>FEwJX0lOSQA=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>FEwJWElOSQA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -267,7 +293,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data></data>
+				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -319,7 +345,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data></data>
+				<data>RFNEVA==</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -959,6 +985,18 @@
 				<key>MinKernel</key>
 				<string></string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Skylake APIC fix</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Identifier</key>
+				<string>com.apple.driver.AppleAPIC</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+			</dict>
 		</array>
 		<key>Emulate</key>
 		<dict>
@@ -1033,9 +1071,9 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>AppleXcpmForceBoost</key>
@@ -1044,6 +1082,8 @@
 			<false/>
 			<key>DisableIoMapper</key>
 			<true/>
+			<key>DummyPowerManagement</key>
+			<false/>
 			<key>ExternalDiskIcons</key>
 			<true/>
 			<key>IncreasePciBarSize</key>
@@ -1068,6 +1108,8 @@
 		<array/>
 		<key>Boot</key>
 		<dict>
+			<key>BuiltinTextRenderer</key>
+			<false/>
 			<key>ConsoleBehaviourOs</key>
 			<string></string>
 			<key>ConsoleBehaviourUi</key>
@@ -1075,7 +1117,7 @@
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>HibernateMode</key>
-			<string>Auto</string>
+			<string>RTC</string>
 			<key>HideSelf</key>
 			<true/>
 			<key>PollAppleHotKeys</key>
@@ -1084,6 +1126,8 @@
 			<string></string>
 			<key>ShowPicker</key>
 			<true/>
+			<key>TakeoffDelay</key>
+			<integer>0</integer>
 			<key>Timeout</key>
 			<integer>5</integer>
 			<key>UsePicker</key>
@@ -1178,136 +1222,15 @@
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>C02916100J9HJ9LJC</string>
+			<string>C02806310GUHJ9L1F</string>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBook10,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02YLHY8HH27</string>
+			<string>C02W70NFHH27</string>
 			<key>SystemUUID</key>
-			<string>719D53B2-8DCE-4958-B251-87B9CED23915</string>
-		</dict>
-		<key>SMBIOS</key>
-		<dict>
-			<key>BIOSReleaseDate</key>
-			<string>10/30/2019</string>
-			<key>BIOSVendor</key>
-			<string></string>
-			<key>BIOSVersion</key>
-			<string>183.0.0.0.0</string>
-			<key>BiosReleaseDate</key>
-			<string>05/25/2019</string>
-			<key>BiosVendor</key>
-			<string>Apple Inc.</string>
-			<key>BiosVersion</key>
-			<string>MB91.88Z.F000.B00.1905251413</string>
-			<key>Board-ID</key>
-			<string>Mac-9AE82516C7C6B903</string>
-			<key>BoardAssetTag</key>
-			<string></string>
-			<key>BoardLocationInChassis</key>
-			<string>Part Component</string>
-			<key>BoardManufacturer</key>
-			<string></string>
-			<key>BoardProduct</key>
-			<string>Mac-EE2EBD4B90B839A8</string>
-			<key>BoardSerialNumber</key>
-			<string>C02916100J9HJ9LJC</string>
-			<key>BoardType</key>
-			<integer>10</integer>
-			<key>BoardVersion</key>
-			<string>1.0</string>
-			<key>ChassisAssetTag</key>
-			<string>MacBook-Aluminum</string>
-			<key>ChassisManufacturer</key>
-			<string></string>
-			<key>ChassisSerialNumber</key>
-			<string>C02YLHY8HH27</string>
-			<key>ChassisType</key>
-			<integer>9</integer>
-			<key>ChassisVersion</key>
-			<string>Mac-EE2EBD4B90B839A8</string>
-			<key>EfiVersion</key>
-			<string>182.0.0.0.0</string>
-			<key>Family</key>
-			<string>MacBook</string>
-			<key>FirmwareFeatures</key>
-			<string>7EE10FFC 00000000</string>
-			<key>FirmwareFeaturesMask</key>
-			<string>7FFF1FFF 00000000</string>
-			<key>LocationInChassis</key>
-			<string>Part Component</string>
-			<key>Manufacturer</key>
-			<string>Apple Inc.</string>
-			<key>Memory</key>
-			<dict>
-				<key>Modules</key>
-				<array>
-					<dict>
-						<key>Frequency</key>
-						<integer>1866</integer>
-						<key>Part</key>
-						<string>9876543210</string>
-						<key>Serial</key>
-						<string>9CCNNNBKTMLBR-NUD</string>
-						<key>Size</key>
-						<integer>2048</integer>
-						<key>Slot</key>
-						<integer>0</integer>
-						<key>Type</key>
-						<string>DDR3</string>
-						<key>Vendor</key>
-						<string>SK Hynix</string>
-					</dict>
-					<dict>
-						<key>Frequency</key>
-						<integer>1866</integer>
-						<key>Part</key>
-						<string>9876543210</string>
-						<key>Serial</key>
-						<string>9CCNNNBKTMLBR-NUD</string>
-						<key>Size</key>
-						<integer>2048</integer>
-						<key>Slot</key>
-						<integer>1</integer>
-						<key>Type</key>
-						<string>DDR3</string>
-						<key>Vendor</key>
-						<string>SK Hynix</string>
-					</dict>
-				</array>
-			</dict>
-			<key>MemoryFormFactor</key>
-			<string></string>
-			<key>Mobile</key>
-			<true/>
-			<key>PlatformFeature</key>
-			<integer>26</integer>
-			<key>ProcessorType</key>
-			<integer>0</integer>
-			<key>ProductName</key>
-			<string>MacBook10,1</string>
-			<key>SerialNumber</key>
-			<string>C02THDZRHDNK</string>
-			<key>SmUUID</key>
-			<string>DC25A124-CFBB-4F29-BA84-C184DB58A1DE</string>
-			<key>SystemFamily</key>
-			<string>MacBook</string>
-			<key>SystemManufacturer</key>
-			<string></string>
-			<key>SystemProductName</key>
-			<string>MacBook10,1</string>
-			<key>SystemSKUNumber</key>
-			<string>Mac-EE2EBD4B90B839A8</string>
-			<key>SystemSerialNumber</key>
-			<string>C02YLHY8HH27</string>
-			<key>SystemUUID</key>
-			<string>719D53B2-8DCE-4958-B251-87B9CED23915</string>
-			<key>SystemVersion</key>
-			<string>1.0</string>
-			<key>Version</key>
-			<string>1.0</string>
+			<string>4D412BD0-B36E-4507-A338-D04B61CB13A6</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
