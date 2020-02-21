@@ -17,7 +17,7 @@ The EFI builds  are APCI hotpatch based. Meaning your DSDT is patched via SSDT f
 [Install instructions Mi Notebook Air 12.5 m3 7y30 & i5 7y54](https://github.com/influenist/Mi-NB-Gaming-Laptop-MacOS/tree/master/Mi-NB-Air-125-7y-Series)
 
 ## Current release
-v2-0-mojave-10.14.3 - [View the release page](https://github.com/influenist/Mi-NB-Gaming-Laptop-MacOS/releases)
+v3-6-Catalina-10.15.3 - [View the release page](https://github.com/influenist/Mi-NB-Gaming-Laptop-MacOS/releases)
 
 ## Credits
 
